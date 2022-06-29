@@ -5,19 +5,7 @@ import java.util.Scanner;
 public class LineComputationMain {
 	static Double length1=0.0d;
 	static Double length2=0.0d;	
-
-public static void main(String[] args)
-{
-	//printing welcome message
-	System.out.println("Welcome to Line Comparison Computatuion Program.");
-    System.out.print("\nEnter the first line-\n"); 
-    length1 = lineCalculation(); 
-    System.out.print("\nEnter the second line-\n"); 
-    length2 = lineCalculation();
-    lineComparison();
-    lineCompareTo();
-    }
-  public static Double lineCalculation() 
+public static Double lineCalculation() 
     { 
     	//Line length calculation
 	    Scanner scanner = new Scanner(System.in);
@@ -58,7 +46,18 @@ public static void main(String[] args)
   	{
   		System.out.println("\nLines 1 is smaller than Line 2 .");
   	}
-}    
+}
+  public static void main(String[] args)
+  {
+  	//printing welcome message
+	  System.out.println("Welcome to Line Comparison Computatuion Program.");
+      System.out.print("\nEnter the first line-\n"); 
+      length1 = LineComputationMain.lineCalculation(); 
+      System.out.print("\nEnter the second line-\n"); 
+      length2 = LineComputationMain.lineCalculation();
+      LineComputationMain.lineComparison();
+      LineComputationMain.lineCompareTo();
+      }
 }	
 
 
