@@ -11,11 +11,12 @@ public static void main(String[] args)
 	//printing welcome message
 	System.out.println("Welcome to Line Comparison Computatuion Program.");
     System.out.print("\nEnter the first line-\n"); 
-    length1 = linecalculation(); 
+    length1 = lineCalculation(); 
     System.out.print("\nEnter the second line-\n"); 
-    length2 = linecalculation();
+    length2 = lineCalculation();
+    lineComparison();
     }
-  public static Double linecalculation() 
+  public static Double lineCalculation() 
     { 
     	//Line length calculation
 	    Scanner scanner = new Scanner(System.in);
@@ -28,7 +29,20 @@ public static void main(String[] args)
     	Double length = Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
     	System.out.println("\nlength of the line is :"+length);
     	return length;
-    	} 
+    	}
+  public static void lineComparison() 
+  {
+	    //Line comparison using equals
+	 if (length1.equals(length2))
+  	{ 
+  		System.out.println("\nBoth the line are equal.");
+  	} 
+  	else 
+  	{
+  		System.out.println("\nLines are not equal."); 
+  	}
+  
+  }  
 }	
 
 
