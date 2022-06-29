@@ -15,6 +15,7 @@ public static void main(String[] args)
     System.out.print("\nEnter the second line-\n"); 
     length2 = lineCalculation();
     lineComparison();
+    lineCompareTo();
     }
   public static Double lineCalculation() 
     { 
@@ -41,8 +42,23 @@ public static void main(String[] args)
   	{
   		System.out.println("\nLines are not equal."); 
   	}
-  
-  }  
+  }
+  public static void lineCompareTo() 
+  {
+	  //Line comparison using compareTo
+  	if (length1.compareTo(length2)==0)
+  	{ 
+  		System.out.println("\nBoth the line are equal.");
+  	} 
+  	else if(length1.compareTo(length2)==1)
+  	{
+  		System.out.println("\nLines 1 is greater than Line 2 ."); 
+  	}
+  	else
+  	{
+  		System.out.println("\nLines 1 is smaller than Line 2 .");
+  	}
+}    
 }	
 
 
